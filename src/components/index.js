@@ -4,6 +4,8 @@ import Button from "./Button";
 import HeroSection from "./HeroSection";
 import AboutUsSection from "./AboutUsSection";
 import ContactUsSection from "./ContactUsSection";
+import BodySolution from "./BodySolution";
+import HeaderSolution from "./HeaderSolution";
 
 export {
   Footer,
@@ -12,4 +14,6 @@ export {
   HeroSection,
   AboutUsSection,
   ContactUsSection,
+  BodySolution,
+  HeaderSolution,
 };
