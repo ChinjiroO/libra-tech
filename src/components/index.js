@@ -10,6 +10,7 @@ import HeaderCourse from "./HeaderCourse";
 import ListSection from "./ListSection";
 import HeroBottom from "./HeroBottom";
 import DetailSection from "./DetailSection";
+import SuggestSection from "./SuggestSection";
 
 export {
   Footer,
@@ -24,4 +25,5 @@ export {
   ListSection,
   HeroBottom,
   DetailSection,
+  SuggestSection,
 };

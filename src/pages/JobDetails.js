@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
-import { HeroBottom, DetailSection } from "../components";
+import { HeroBottom, DetailSection, SuggestSection } from "../components";
 import Layout from "../layout/Layout";
 
 const mapStateToProps = (state) => {
@@ -15,13 +15,14 @@ const JobDetails = ({ jobs }) => {
   const [job, setJob] = useState([]);
 
   useEffect(() => {
-    setJob(jobs.filter((course) => course.id === parseInt(id)));
+    setJob(jobs.filter((job) => job.id === parseInt(id)));
   }, [jobs, id]);
+
   return (
     <Layout>
       <DetailSection data={job[0]} />
       <HeroBottom />
-      <div className="min-h-[600px]">suggest</div>
+      <SuggestSection title="Jobs" data={jobs.slice(0, 3)} />
     </Layout>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
-import { HeroBottom, DetailSection } from "../components";
+import { HeroBottom, DetailSection, SuggestSection } from "../components";
 import Layout from "../layout/Layout";
 
 const mapStateToProps = (state) => {
@@ -22,7 +22,7 @@ const CoursesDetails = ({ courses }) => {
     <Layout>
       <DetailSection data={course[0]} />
       <HeroBottom />
-      <div className="min-h-[600px]">suggest</div>
+      <SuggestSection title="Courses" data={courses.slice(0, 3)} />
     </Layout>
   );
 };
