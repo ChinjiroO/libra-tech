@@ -1,7 +1,27 @@
+import React from "react";
+import { Routes, Route, Outlet } from "react-router-dom";
+import {
+  Home,
+  Solution,
+  Courses,
+  Jobs,
+  CoursesDetails,
+  JobDetails,
+} from "./pages";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-lg text-blue-600 font-bold">hi</h1>
+    <div className="min-h-screen w-screen overflow-hidden">
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="home" element={<Home />} />
+        <Route path="solution" element={<Solution />} />
+        <Route path="courses" element={<Courses />} />
+        <Route path="courses/:id" element={<CoursesDetails />} />
+        <Route path="jobs" element={<Jobs />} />
+        <Route path="jobs/:id" element={<JobDetails />} />
+      </Routes>
+      <Outlet />
     </div>
   );
 }
