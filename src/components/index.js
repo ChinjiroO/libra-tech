@@ -9,6 +9,7 @@ import HeaderSolution from "./HeaderSolution";
 import HeaderCourse from "./HeaderCourse";
 import ListSection from "./ListSection";
 import HeroBottom from "./HeroBottom";
+import DetailSection from "./DetailSection";
 
 export {
   Footer,
@@ -22,4 +23,5 @@ export {
   HeaderCourse,
   ListSection,
   HeroBottom,
+  DetailSection,
 };
