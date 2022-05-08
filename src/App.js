@@ -7,6 +7,7 @@ import {
   Jobs,
   CoursesDetails,
   JobDetails,
+  ApplyCourse,
 } from "./pages";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="solution" element={<Solution />} />
         <Route path="courses" element={<Courses />} />
         <Route path="courses/:id" element={<CoursesDetails />} />
+        <Route path="courses/:id/apply" element={<ApplyCourse />} />
         <Route path="jobs" element={<Jobs />} />
         <Route path="jobs/:id" element={<JobDetails />} />
       </Routes>
