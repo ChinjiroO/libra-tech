@@ -6,6 +6,9 @@ import AboutUsSection from "./AboutUsSection";
 import ContactUsSection from "./ContactUsSection";
 import BodySolution from "./BodySolution";
 import HeaderSolution from "./HeaderSolution";
+import HeaderCourse from "./HeaderCourse";
+import ListSection from "./ListSection";
+import HeroBottom from "./HeroBottom";
 
 export {
   Footer,
@@ -16,4 +19,7 @@ export {
   ContactUsSection,
   BodySolution,
   HeaderSolution,
+  HeaderCourse,
+  ListSection,
+  HeroBottom,
 };
